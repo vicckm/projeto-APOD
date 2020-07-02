@@ -13,14 +13,14 @@ reqImagem.send();
 reqImagem.addEventListener('load', function(){
 
     let reqImagemParse = JSON.parse(reqImagem.responseText);
-    let responseData = reqImagemParse.date;
+    let responseData = new Date(reqImagemParse.date);
     let responseImagem = reqImagemParse.url;
     let responseDescricao = reqImagemParse.explanation;
 
-
-    data.textContent = responseData;
+    data.textContent = responseData.toDateString("MMM DD YYYY");
     descricao.textContent = responseDescricao;
     imagem.src = responseImagem;
+
 })
 
 
