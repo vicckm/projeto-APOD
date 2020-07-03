@@ -3,7 +3,6 @@ let imagem = document.querySelector('#imagem');
 let descricao = document.querySelector('#descricao');
 
 
-console.log("oi")
 // requisição API
 
 let reqImagem = new XMLHttpRequest();
