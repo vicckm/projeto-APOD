@@ -16,9 +16,8 @@ header h1 {
 }
 
 main { 
-    width: 100vw;
-    height: 100vh;
-   background-color: #f1faee;
+    background-color: #f1faee;
+    height: auto;
 }
 
 #data {
@@ -34,4 +33,22 @@ main {
 
 #descricao {
     margin: 30px 0;  
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer p{
+    margin-right: 10px;
+    margin-bottom: 3px;
 }
