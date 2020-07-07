@@ -1,8 +1,8 @@
 let data = document.querySelector("#data");
-let imagem = document.querySelector("#imagem");
+let imagem = document.querySelector(".imagem");
 let descricao = document.querySelector("#descricao");
 let form = document.querySelector("#form");
-let video = document.querySelector("#video");
+let video = document.querySelector(".video");
 let titulo = document.querySelector("#titulo");
 let copyright = document.querySelector("#copyrightAPI")
 
@@ -18,7 +18,6 @@ form.addEventListener("submit", function(event){
     let urlComData = `https://api.nasa.gov/planetary/apod?api_key=Ybsgh0M67YWj8jz90WZHMAHc2eLtGBSrRal69AB5&date=${this.elements.inputData.value}`;
     
     reqAPI.open("GET", urlComData);
-
     reqAPI.send();
 });
 
@@ -44,12 +43,12 @@ reqAPI.onload = function(){
         if(reqJSON.media_type == "image"){  
             video.classList.add("tiraDisplay"); 
             imagem.src = imagemJSON;
-            imagem.classList.add("imagem");
+            imagem.classList.remove("tiraDisplay");
             
         } else { 
             imagem.classList.add("tiraDisplay");
             video.src = videoJSON;
-            video.classList.add("video");   
+            video.classList.remove("tiraDisplay");   
         }      
     } else {
         document.write("error")
