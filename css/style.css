@@ -25,6 +25,10 @@ main {
     padding: 15px 0;
 }
 
+.tiraDisplay {
+    display: none;
+}
+
 #imagem {
     width: 600px;
     width: 600px;
