@@ -1,5 +1,5 @@
 body {
-    text-align: center;
+    background-color: #e6e6e6;
 }
 
 header {
@@ -12,12 +12,50 @@ header {
 
 header h1 {
     font-size: 40px;
+    text-align: center;
     color: white;
 }
 
 main { 
-    background-color: #f1faee;
-    height: auto;
+   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    width: 940px;
+    text-align: center;
+}
+
+#form label {
+    display: block;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+#form input {
+    margin: 15px 10px 0 0;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#form button {
+    background: black;
+    border: none;
+    color: white;
+    padding: 9px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#titulo {
+    margin-top: 20px;
+    font-size: 32px;
 }
 
 #data {
@@ -25,25 +63,43 @@ main {
     padding: 15px 0;
 }
 
-.tiraDisplay {
-    display: none;
+#imagem {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    display: inline-block;
 }
 
-#imagem {
+#video {
     width: 600px;
     width: 600px;
     border-radius: 30px;
+    display: inline-block;
 }
 
 #descricao {
-    margin: 30px 0;  
+    padding: 30px 0; 
+    font-size: 20px; 
+}
+
+#copyrightAPI {
+    margin-bottom: 120px;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.tiraDisplay {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 footer {
     position: fixed;
     width: 100%;
+    padding: 20px;
     bottom: 0;
-    height: 100px;
+    height: 50px;
     background-color: black;
     color: white;
     display: flex;
@@ -55,4 +111,27 @@ footer {
 footer p{
     margin-right: 10px;
     margin-bottom: 3px;
+}
+
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .container{
+        height: 100vh;
+    }
+
+    #titulo {
+        font-size: 26px;
+    }
+
+    #imagem, #video {
+        width: 300px;
+        height: 200px;
+    }
+
+    #descricao {
+        margin: 0 10px;
+    }
 }

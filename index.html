@@ -14,21 +14,28 @@
         <h1>Astronomy Picture of the Day</h1>
     </header>
     <main>
-        <form id="form">
-            <label for="inputData">Escolha o dia</label>
-            <input id="inputData" name="inputData" type="date">
-            <button id="submitData" name="submitData" type="submit">Enviar</button>
-        </form>
-        <p id="data"></p>
+        <div class="container">
+            <form id="form">
+                <label for="inputData">Choose the date!</label>
+                <input id="inputData" name="inputData" type="date">
+                <button id="submitData" name="submitData" type="submit">Send</button>
+            </form>
 
-        <iframe id="video" class="video" src=""></iframe>
-        <img id="imagem" class="imagem" src="">
+            <h1 id="titulo"></h1>
 
-        <p id="descricao"></p>
-        <footer>
-            <p id="copyright">Made by Victoria Marques</p><img src="./img/coracao.png" alt="">
-        </footer>
+            <h2 id="data"></h2>
+
+            <iframe id="video" class="video" src=""></iframe>
+            <img id="imagem" class="imagem" src="">
+
+            <p id="descricao"></p>
+
+            <p id="copyrightAPI"></p>
+        </div>
     </main>
+    <footer>
+        <p id="copy">Made by Victoria Marques</p><img src="./img/coracao.png" alt="">
+    </footer>
     
 </body>
 </html>
