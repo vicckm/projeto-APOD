@@ -51,7 +51,7 @@ reqAPI.onload = function(){
             video.classList.remove("tiraDisplay");   
         }      
     } else {
-        document.write("error")
+        window.location.href = "erro.html"
     }
 }
 

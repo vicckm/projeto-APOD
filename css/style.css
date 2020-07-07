@@ -113,6 +113,28 @@ footer p{
     margin-bottom: 3px;
 }
 
+#erro {
+    margin: 30px 0;
+    color: red;
+    font-size: 30px;
+}
+
+.link {
+    font-size: 23px; 
+    text-decoration: none;
+}
+
+.link:visited {
+    color: black;
+}
+
+.link:hover {
+    color: white;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 @media(max-width: 768px) {
     header h1 {
         font-size: 25px;
@@ -133,5 +155,9 @@ footer p{
 
     #descricao {
         margin: 0 10px;
+    }
+
+    #erro {
+        font-size: 26px;
     }
 }
